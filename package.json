@@ -1,0 +1,42 @@
+{
+  "name": "opencode-desk",
+  "productName": "OpenCode Desk",
+  "version": "1.0.0",
+  "description": "دسکتاپ فارسی OpenCode با مدل‌های رایگان، تاریخچه چت و ارسال تصویر",
+  "main": "./out/main/index.js",
+  "author": "M-Hooshmand",
+  "license": "MIT",
+  "homepage": "https://github.com/M-Hooshmand/opencode-desk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Hooshmand/opencode-desk.git"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "dist": "npm run build && electron-builder --publish never",
+    "dist:linux": "npm run build && electron-builder --linux --publish never",
+    "dist:win": "npm run build && electron-builder --win --publish never"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.4",
+    "extract-zip": "^2.0.1",
+    "marked": "^15.0.7",
+    "tar": "^7.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.4.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^3.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
+  }
+}

@@ -1,0 +1,66 @@
+appId: com.mhooshmand.opencodedesk
+productName: OpenCode Desk
+copyright: Copyright © 2026 M-Hooshmand
+
+directories:
+  buildResources: build
+  output: release
+
+files:
+  - out/**
+  - package.json
+  - '!**/*.map'
+  - '!**/{.DS_Store,.git,.github,*.md}'
+
+asar: true
+compression: maximum
+
+artifactName: OpenCodeDesk-${version}-${os}-${arch}.${ext}
+
+publish:
+  provider: github
+  owner: M-Hooshmand
+  repo: opencode-desk
+
+win:
+  icon: build/icon.png
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+  executableName: OpenCodeDesk
+
+nsis:
+  artifactName: OpenCodeDesk-Setup-${version}-${arch}.${ext}
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: OpenCode Desk
+  deleteAppDataOnUninstall: false
+
+portable:
+  artifactName: OpenCodeDesk-Portable-${version}-${arch}.${ext}
+
+linux:
+  icon: build/icon.png
+  target:
+    - target: AppImage
+      arch: [x64]
+    - target: deb
+      arch: [x64]
+  category: Development
+  maintainer: M-Hooshmand <m.hooshmand@users.noreply.github.com>
+  synopsis: Persian desktop client for OpenCode AI
+  description: >-
+    OpenCode Desk is a Persian (RTL) desktop client for the OpenCode AI engine.
+    It installs and manages the OpenCode CLI locally, chats with free models such
+    as DeepSeek and MiMo Flash, keeps separate chat histories and analyzes images.
+  desktop:
+    entry:
+      Name: OpenCode Desk
+      Comment: دستیار هوش مصنوعی OpenCode
+      Categories: Development;Utility;
