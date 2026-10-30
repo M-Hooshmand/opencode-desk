@@ -24,6 +24,7 @@ publish:
 
 win:
   icon: build/icon.png
+  signAndEditExecutable: false
   target:
     - target: nsis
       arch: [x64]
