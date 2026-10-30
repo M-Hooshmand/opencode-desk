@@ -11,11 +11,14 @@
 
 | نسخه | لینک |
 | --- | --- |
-| نسخهٔ پرتابل (پیشنهادی) | [**OpenCodeDesk-win-x64.zip**](https://github.com/M-Hooshmand/opencode-desk/releases/latest/download/OpenCodeDesk-win-x64.zip) |
+| نصب‌کنندهٔ ویندوز ۶۴ بیتی (پیشنهادی) | [**OpenCodeDesk-win-x64.exe**](https://github.com/M-Hooshmand/opencode-desk/releases/latest/download/OpenCodeDesk-win-x64.exe) |
+| نسخهٔ پرتابل (بدون نصب) | [OpenCodeDesk-win-x64.zip](https://github.com/M-Hooshmand/opencode-desk/releases/latest/download/OpenCodeDesk-win-x64.zip) |
 
-فایل ZIP را دانلود کنید، از حالت فشرده خارج کنید و `OpenCodeDesk.exe` را اجرا کنید (نیازی به نصب ندارد و می‌توانید پوشه را هر جا می‌خواهید بگذارید). ویندوز ممکن است هشدار SmartScreen بدهد (برنامه امضای تجاری ندارد): روی **More info → Run anyway** بزنید.
+**نصب‌کننده:** فایل `exe` را اجرا کنید، مسیر نصب را انتخاب کنید و منتظر بمانید؛ میان‌بر روی دسکتاپ و منوی استارت ساخته می‌شود و برنامه در `Programs and Features` برای حذف ثبت می‌شود. نصب در `C:\Program Files\OpenCode Desk` انجام می‌شود (دسترسی Administrator لازم است).
 
-> نصب‌کنندهٔ `exe` هم به‌زودی از طریق GitHub Actions منتشر می‌شود؛ فعلاً نسخهٔ ZIP همان برنامهٔ کامل است.
+**پرتابل:** فایل ZIP را دانلود کنید، از حالت فشرده خارج کنید و `OpenCodeDesk.exe` را اجرا کنید (نیازی به نصب ندارد).
+
+ویندوز ممکن است هشدار SmartScreen بدهد (برنامه امضای تجاری ندارد): روی **More info → Run anyway** بزنید.
 
 ### لینوکس
 

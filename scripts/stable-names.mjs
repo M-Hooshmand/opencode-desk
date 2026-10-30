@@ -5,6 +5,7 @@ const dir = 'release'
 const targets = [
   { match: /-linux-x86_64\.AppImage$/, name: 'OpenCodeDesk-linux-x86_64.AppImage' },
   { match: /-linux-amd64\.deb$/, name: 'OpenCodeDesk-linux-amd64.deb' },
+  { match: /-Setup-[0-9][^/]*-x64\.exe$/, name: 'OpenCodeDesk-win-x64.exe' },
   { match: /-win-x64\.exe$/, name: 'OpenCodeDesk-win-x64.exe' },
   { match: /-win-x64\.zip$/, name: 'OpenCodeDesk-win-x64.zip' }
 ]
